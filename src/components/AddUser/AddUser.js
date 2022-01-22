@@ -54,17 +54,17 @@ const AddUser = () => {
 
                 <Form.Group className="mb-3" controlId="name">
                     <Form.Label>Name</Form.Label>
-                    <Form.Control type="text" ref={nameRef} placeholder="Enter Name" />
+                    <Form.Control maxLength={30} type="text" ref={nameRef} placeholder="Enter Name" />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="email">
                     <Form.Label>Email</Form.Label>
-                    <Form.Control ref={emailRef} type="email" placeholder="Email" />
+                    <Form.Control maxLength={45} ref={emailRef} type="email" placeholder="Email" />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                     <Form.Label>Write somthing about your self</Form.Label>
-                    <Form.Control ref={textRef} as="textarea" rows={3} />
+                    <Form.Control maxLength={150} ref={textRef} as="textarea" rows={3} placeholder='Max length 150' />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
